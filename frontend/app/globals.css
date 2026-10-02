@@ -1,0 +1,5 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+body { @apply bg-bg text-white antialiased; background-image: radial-gradient(60% 40% at 50% -10%, rgba(124,58,237,.22), transparent); }
+.glass { @apply bg-white/[0.03] border border-white/10 backdrop-blur-xl rounded-2xl; }
+:focus-visible { outline: 2px solid #8B5CF6; outline-offset: 2px; }
+@media print { body { background: #fff; color: #000; } .no-print { display: none !important; } .glass { background: #fff; border-color: #ddd; } }
